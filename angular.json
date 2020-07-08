@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "MyApp3"
+    }
+  },
+  "defaultProject": "MyApp3",
+  "cli": {
+    "analytics": "f2b93b83-8b31-4d83-933c-c074e14f28ae"
+  }
 }

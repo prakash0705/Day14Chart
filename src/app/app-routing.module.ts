@@ -1,37 +1,56 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {CarouselComponent} from 'src/app/carousel/carousel.component';
-import {AccordComponent} from 'src/app/accord/accord.component';
-import {ModelComponent} from 'src/app/model/model.component';
-import {TypeheadComponent} from 'src/app/typehead/typehead.component';
-import {PopoverComponent} from 'src/app/popover/popover.component';
-
+import {BarChartComponent} from 'src/app/bar-chart/bar-chart.component';
+import {BubbleChartComponent} from 'src/app/bubble-chart/bubble-chart.component';
+import {LineChartComponent} from 'src/app/line-chart/line-chart.component';
+import {PieChartComponent} from 'src/app/pie-chart/pie-chart.component';
+import {RadarChartComponent} from 'src/app/radar-chart/radar-chart.component';
+import {DoughnutChartComponent} from 'src/app/doughnut-chart/doughnut-chart.component'
+import {ScatterChartComponent} from 'src/app/scatter-chart/scatter-chart.component'
+import { PolarAreaChartComponent } from './polar-area-chart/polar-area-chart.component';
+import {HomeComponent} from 'src/app/home/home.component'
 const routes: Routes = [
   {
     path:"",
-    component:AccordComponent
+    component:HomeComponent
   },
   {
-    path:"accord",
-    component:AccordComponent
+    path:"home",
+    component:HomeComponent
   },
   {
-    path:"carousel",
-    component:CarouselComponent
+    path:"bar",
+    component:BarChartComponent
   },
   {
-    path:"model",
-    component:ModelComponent
+    path:"bubble",
+    component:BubbleChartComponent
   },
   {
-    path:"typehead",
-    component:TypeheadComponent
-
+    path:"line",
+    component:LineChartComponent
   },
   {
-    path:"popover",
-    component: PopoverComponent
+    path:"pie",
+    component:PieChartComponent
+  },
+  {
+    path:"radar",
+    component:RadarChartComponent
+  },
+  {
+    path:"doughnut",
+    component:DoughnutChartComponent
+  },
+  {
+    path:"scatter",
+    component:ScatterChartComponent
+  },
+  {
+    path:"polar",
+    component:PolarAreaChartComponent
   }
+  
 ];
 RouterModule.forRoot(routes, {useHash: true})
 
